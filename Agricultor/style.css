@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color: #E6E6E6;
     height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
 }
 .interface{
     margin: 0;
@@ -18,19 +21,19 @@ body{
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 800;
-    background-color: green;
-    color: white;
-    box-shadow: 0px 5px 10px yellowgreen;
+    background-color: #016736;
+    color: #F7F7F7;
+    box-shadow: 0px 5px 8px yellowgreen;
     border-radius: 30px;
     cursor: pointer;
-    transition: .4s;
+    transition: .5s;
+    text-decoration: none;
 }
-a:hover{
-    background-color: white ;
-    color: green;
-    box-shadow: 0px 0px 5px green;
-    border: 2px solid yellowgreen;
-    transform: scale(1.05);
+.menu a:hover{
+    background-color: #F7F7F7;
+    color: #016736;
+    box-shadow: 0px 0px 8px green;
+    border: 0px solid yellowgreen;
 }
 /*CABEÇALHO*/
 header{
@@ -41,12 +44,6 @@ header>.interface{
     align-items: center;
     justify-content: center;
 }
-header a{
-    color: #5c5c5c;
-    text-decoration: none;
-    display: inline-block;
-    transition: .5s;
-}
 header nav.menu ul li{
     display: inline-block;
     padding: 0 80px;
@@ -56,6 +53,7 @@ header img{
     margin-right: 80px;
     z-index: -1;
 }
+/*Topo do site*/
 .inicio{
     height: 75%;
     background-image: url(img/Agricultura.edit.jpg);
@@ -74,7 +72,7 @@ header img{
 }
 .texto h1{
     letter-spacing: 1px;
-    color: white;
+    color: #F7F7F7;
     font-size: 40px;
     line-height: 50px;
 }
@@ -83,8 +81,9 @@ header img{
 }
 .texto hr{
     margin-top: 15px;
-    border: 1px solid white;
+    border: 1px solid #F7F7F7;
 }
+/*Sobre*/
 .sobre {
     height: 80%;
     background-image: url(img/sla\ 230.jpg);
@@ -94,7 +93,7 @@ header img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 10rem;
     box-shadow: 0px 0px 20px yellowgreen;
 }
@@ -106,37 +105,21 @@ header img{
    letter-spacing: 1px;
 }
 .texto_sobre h1{
-    color: white;
+    color: #F7F7F7;
     font-size: 25px;
     padding-bottom: 30px;
 }
 .texto_sobre p{
-    color: white;
+    color: #F7F7F7;
     font-size: 22px;
     word-spacing: 5px;
 }
-.texto_sobre button{
-    margin-top: 30px;
-    padding: 15px 25px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    background-color: white;
-    color: green;
-    border: 2px solid yellowgreen;
-    border-radius: 30px;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.texto_sobre button:hover{
-    transform: scale(1.10);
-    box-shadow: 0px 0px 10px yellowgreen;
-    transition: .2s;
-}
+/*Serviços*/
 .serviços{
     padding: 70px ;
     text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 }
 .serviços .flex{
     gap: 60px;
@@ -145,24 +128,28 @@ header img{
 }
 .serviços h2{
     font-size: 40px;
-    color: green;
+    color: #016736;
     padding: 20px 0;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid #016736;
     letter-spacing: 1px;
 }
 .box_svc{
-    background-color: green;
-    color: white;
+    background-color: #016736;
+    color: #F7F7F7;
     padding: 100px 50px 100px;
     border-radius: 20px;
     margin-top: 45px;
-    transition: .2s;
     border: 2px solid yellowgreen;
     box-shadow: 0px 0px 10px green;
+    transition: .5s;
+}
+.box_svc:hover{
+    transform: scale(1.10);
+    transition: .5s;
 }
 .box_svc i{
     font-size: 70px;
-    color: white;
+    color: #F7F7F7;
 }
 .box_svc h3{
     font-size: 28px;
@@ -175,55 +162,55 @@ header img{
     font-size: 15px;
     letter-spacing: 1px;
     font-weight: 600;
-    background-color: white;
-    color: green;
+    background-color: #F7F7F7;
+    color: #016736;
     border: 2px solid yellowgreen;
     border-radius: 30px;
     cursor: pointer;
-    
+    transition: .4s;
 }
 .box_svc button:hover{
-    transform: scale(1.10);
+    transform: scale(1.05);
     box-shadow: 0px 0px 10px yellowgreen;
     transition: .4s;
 }
 .box_svc button i{
     font-size: 18px;
     margin-top: 10px;
-    color: green;
+    color: #016736;
 }
+/*CONtato*/
 .contato h2{
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-bottom: 30px;
     font-size: 50px;
-    color: green;
+    color: #016736;
     text-align: center;
     font-weight: 500;
 }
 .contato .flex{
     align-items: center;
     justify-content: center;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
 }
 .numeros{
     display: flex;
     flex-direction: column;
     gap: 40px;
     font-size: 35px;
-    color: green;
+    color: #016736;
     border-right: 2px solid yellowgreen;
     padding: 50px;
 }
 .numeros a{
-    color:green;
+    color:#016736;
     transform: none;
     border: none;
     box-shadow: none;
-    text-decoration: none;
 }
 .formulario p{
     font-size: 35px;
-    color: green;
+    color: #016736;
     text-align: center;
     padding: 20px;
 }
@@ -234,29 +221,30 @@ form{
     padding: 60px ;
     padding-top: 10px;
     gap: 20px;
-    color: white;
+    color: #F7F7F7;
 }
 form input{
-    background-color: green;
+    background-color: #016736;
     border: 0;
     outline: 0;
     padding: 25px 45px ;
     border-radius: 30px;
-    box-shadow: 0px 0px 5px yellowgreen;
+    border: 2px solid yellowgreen;
 }
 form .btn-enviar {
     margin-top: 10px;
     text-align: center;
 }
-form .btn-enviar input {
-    padding: 10px 15px;
-    background-color: green;
+.btn-enviar input {
+    padding: 12px 15px;
+    background-color: #016736;
     border: 2px solid yellowgreen;
+    box-shadow: 0 0 ;
     border-radius: 30px;
-    color: rgba(255, 255, 255, 0.999);
+    color: #F7F7F7;
     cursor: pointer;
-    transition: .2s;
     font-size: 15px;
+    transition: .5s;
 }
 form input::placeholder{
     font-size: 18px;
@@ -264,6 +252,83 @@ form input::placeholder{
 }
 form .btn-enviar input:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px yellowgreen;
-    transition: .4s;
+    box-shadow: 0px 0px 5px yellowgreen;
+    transition: .5s;
+}
+.bi-telephone{
+    color: #1F1F1F;
+    font-size: 40px;
+}
+.bi-whatsapp{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+.bi-instagram{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+.bi-envelope{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+/*FOoTER*/
+footer{
+    border-top: 1px solid #1F1F1F;
+    padding: 40px 4%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    width: 8vw;
+}
+footer h1{
+    color: #016736;
+    margin-top: 40px;
+    text-align: center;
+}
+footer button{
+    margin-top: 30px;
+    border: 0;
+    cursor: pointer;
+    border: 2px solid #1F1F1F;
+    background-color: #016736;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+footer button .bi-whatsapp{
+    color: white;
+}
+footer button .bi-instagram{
+    color: white;
+}
+@media screen and (max-width:1020px){
+    header>.interface{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .inicio{
+        display: none;
+    }
+    .sobre{
+        display: none;
+    }
+    .serviços{
+        padding: 20px 4%;
+    }
+    .numeros{
+        font-size: 20px;
+    }
+    .formulario p{
+        padding-top: 250px;
+    }
+    footer img{
+        width: 150px;
+        justify-content: center;
+    }
+    footer h1{
+        display: none;
+    }
 }
