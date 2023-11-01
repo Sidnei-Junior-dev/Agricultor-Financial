@@ -85,6 +85,29 @@ header img{
     margin-top: 15px;
     border: 1px solid #F7F7F7;
 }
+.btn_voltar{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #016736;
+    color: #F7F7F7;
+    border: 2px solid #1F1F1F;
+    box-shadow: 0px 5px 8px yellowgreen;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn_voltar:hover{
+    transform: scale(1.10);
+    background-color: #F7F7F7;
+    color: #016736;
+    transition: .5s;
+}
+
 /*Sobre*/
 .sobre {
     height: 80%;
