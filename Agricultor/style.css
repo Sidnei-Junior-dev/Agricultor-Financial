@@ -311,10 +311,14 @@ footer button .bi-instagram{
         padding: 20px 4%;
     }
     .numeros{
-        font-size: 20px;
+        font-size: 30px;
+        border: none;
     }
     .formulario p{
         padding-top: 250px;
+    }
+    form input{
+        font-size: 20px;
     }
     footer img{
         width: 150px;
